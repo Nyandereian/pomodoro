@@ -1,0 +1,40 @@
+html {
+  background-color: #efefef;
+  box-sizing: border-box;
+  font-size: 12px; }
+
+body {
+  height: 100vh; }
+
+.container {
+  position: relative;
+  width: 100%; }
+
+.wrapper {
+  align-items: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-around;
+  margin: 1% 2%; }
+
+.title h1 {
+  color: #bd2640;
+  font-family: "Glacial Indifference", sans-serif;
+  font-size: 6.67rem;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+.timer h2 {
+  color: black;
+  font-family: "Glacial Indifference", sans-serif;
+  font-size: 10rem; }
+
+.corner {
+  display: none;
+  position: absolute; }
+
+/*# sourceMappingURL=styles.css.map */
