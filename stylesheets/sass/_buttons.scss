@@ -1,0 +1,45 @@
+.buttons {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.play-btn {
+  color: $background;
+  background-color: $background;
+  background-image: url('../Media/buttons.png');
+  background-size: cover;
+  border-color: $background;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: transform .07s ease;
+  -moz-transition: transform .07s ease;
+  -o-transition: transform .07s ease;
+  transition: transform .07s ease;
+  height: 120px;
+  width: 120px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.0);
+  }
+
+  &[name='reset'] {
+    background-position: -15px 0;
+  }
+
+  &[name='play-pause'] {
+    background-position: -195px 0;
+  }
+
+  &[name='stop'] {
+    background-position: -374px 0;
+  }
+}

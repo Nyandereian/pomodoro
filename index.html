@@ -6,7 +6,6 @@
   <meta name='description' content='A minimalistic pomodoro timer'>
   <meta name='author' content='Nyandereian & Matt'>
 
-  <link rel='stylesheet' href='stylesheets/reset.css'>
   <link rel='stylesheet' href='stylesheets/styles.css'>
 
   <title>Pomodoro Timer</title>
@@ -29,15 +28,18 @@
         </div>
       </div>
 
+
       <div class='corner'>
+        <div class='settings-icon'>
+        </div>
         <div class='settings-wrapper'>
           <div class='setting-line'>
             <p class='setting'>Break: </p>
-            <input name='break' type='number' value='25'>
+            <input name='break' type='number' value='25' min='1' max='120'>
           </div>
           <div class='setting-line'>
             <p class'setting'>Session: </p>
-            <input name='session' type='number' value='5'>
+            <input name='session' type='number' value='5' min='1' max='120'>
           </div>
         </div>
       </div>

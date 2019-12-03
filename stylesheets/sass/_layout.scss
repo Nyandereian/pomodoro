@@ -1,0 +1,23 @@
+html {
+  background-color: $background;
+  font-size: 12px;
+}
+
+.container {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 2% 4%;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper {
+  align-items: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}

@@ -1,3 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, button:hover, button:active, button:focus {
+  border: 0;
+  outline: 0; }
+
 @fontface {
   font-family: "Glacial Indifference";
   src: url("../media/fonts/GlacialIndifference-Regular.otf"); }
@@ -37,11 +88,99 @@ html {
   color: black;
   font-size: 10rem; }
 
-.buttons .play-btn[name='reset'] {
-  background-image: url(../); }
+.buttons {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 40%; }
+
+.play-btn {
+  color: #efefef;
+  background-color: #efefef;
+  background-image: url("../Media/buttons.png");
+  background-size: cover;
+  border-color: #efefef;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: transform .07s ease;
+  -moz-transition: transform .07s ease;
+  -o-transition: transform .07s ease;
+  transition: transform .07s ease;
+  height: 120px;
+  width: 120px; }
+  .play-btn:hover {
+    transform: scale(1.1); }
+  .play-btn:active {
+    transform: scale(1); }
+  .play-btn[name='reset'] {
+    background-position: -15px 0; }
+  .play-btn[name='play-pause'] {
+    background-position: -195px 0; }
+  .play-btn[name='stop'] {
+    background-position: -374px 0; }
+
+html {
+  overflow: hidden; }
 
 .corner {
-  display: none;
-  position: absolute; }
+  border-color: transparent transparent transparent white;
+  border-style: solid;
+  border-width: 350px 0 0 480px;
+  bottom: -100px;
+  display: block;
+  height: 0;
+  left: -200px;
+  position: absolute;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  width: 0px; }
+  .corner:hover {
+    bottom: 0;
+    left: 0; }
+    .corner:hover .settings-icon {
+      display: none; }
+    .corner:hover .settings-wrapper {
+      opacity: 1; }
+
+.settings-icon {
+  background-image: url("../Media/settings.jpeg");
+  background-size: cover;
+  bottom: 110px;
+  display: block;
+  height: 40px;
+  right: 220px;
+  position: absolute;
+  width: 40px; }
+
+.settings-wrapper {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  bottom: 152px;
+  opacity: 0;
+  font-size: 3rem;
+  left: -460px;
+  position: relative; }
+
+.setting-line {
+  align-content: center;
+  display: flex;
+  margin: 0 0 30px 20px; }
+  .setting-line input {
+    font-family: "Glacial Indifference", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    border: 1px solid white;
+    font-size: 3rem;
+    text-align: center;
+    width: 100px; }
+    .setting-line input:focus {
+      box-shadow: 0;
+      outline: 0; }
 
 /*# sourceMappingURL=styles.css.map */

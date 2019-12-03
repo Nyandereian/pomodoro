@@ -1,0 +1,12 @@
+.title {
+  @include main-font;
+  color: $pomodoro;
+  font-size: 6.67rem;
+  text-transform: uppercase;
+}
+
+.timer {
+  @include main-font;
+  color: black;
+  font-size: 10rem;
+}

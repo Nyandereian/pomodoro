@@ -1,0 +1,16 @@
+@fontface {
+  font-family: "Glacial Indifference";
+  src: url('../media/fonts/GlacialIndifference-Regular.otf');
+}
+
+$background: #efefef;
+$pomodoro: #bd2640;
+$buttons: #3f6cb2;
+$settings: #a6a6a6;
+$main-font-family: 'Glacial Indifference', sans-serif;
+
+@mixin main-font {
+  font-family: $main-font-family;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+}
