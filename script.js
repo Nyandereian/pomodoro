@@ -22,7 +22,7 @@ document.querySelectorAll('input').forEach(setting => {
 function playPause() {
   toggleSettings(false);
   if (pause) {
-    countdown = setInterval(decreaseTimer, 10);
+    countdown = setInterval(decreaseTimer, 1000);
     pause = false;
   } else {
     clearInterval(countdown);
